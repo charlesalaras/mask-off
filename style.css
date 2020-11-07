@@ -1,8 +1,11 @@
+<style>
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@1,500&display=swap');
+</style>
+
 body {
   background-color: #f5f8fd;
 }
-
 
 .container {
   width: 500px;
@@ -10,7 +13,7 @@ body {
   margin: 0 auto;
   background: #95acca;
   top: 50%;
-  transform: translateY(100%);
+  transform: translateY(50%);
   padding: 1.5em;
   box-shadow:
     0 2.4px 2.2px rgba(0, 0, 0, 0.076),
@@ -20,9 +23,21 @@ body {
     0 35.5px 33.4px rgba(0, 0, 0, 0.194),
     0 85px 80px rgba(0, 0, 0, 0.27);
 }
+
 .vertical-center {
   margin: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.form {
+  font-size: 36px;
+  font-family: 'DM Mono', monospace;
+}
+
+.form-2 {
+  font-size: 22px;
+  font-family: 'DM Mono', monospace;
+
 }
