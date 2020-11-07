@@ -1,5 +1,28 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 body {
-  background-color: #b0cac7;
+  background-color: #f5f8fd;
+}
 
+
+.container {
+  width: 500px;
+  position: relative;
+  margin: 0 auto;
+  background: #95acca;
+  top: 50%;
+  transform: translateY(100%);
+  padding: 1.5em;
+  box-shadow:
+    0 2.4px 2.2px rgba(0, 0, 0, 0.076),
+    0 5.7px 5.3px rgba(0, 0, 0, 0.109),
+    0 10.6px 10px rgba(0, 0, 0, 0.135),
+    0 19px 17.9px rgba(0, 0, 0, 0.161),
+    0 35.5px 33.4px rgba(0, 0, 0, 0.194),
+    0 85px 80px rgba(0, 0, 0, 0.27);
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }

@@ -31,8 +31,8 @@
   </div>
 </nav>
 
-	<div class="container"style="width: 500px; margin:auto">
-		<form id="user-report">
+<div class="container">
+	<form id="user-report">
 			<div class="form-group">
 				<label for="location">Location </label>
 				<input type="text" id="location-input" class="form-control form-control-lg">
@@ -53,16 +53,22 @@
 					</select>
 				</div>
 			<div class="form-check">
-				<input type="checkbox" class="custom-control-input" id="customCheck1">
+				<input type="checkbox" class="custom-control-input" id="maskPresence">
 				<i class="fas fa-head-side-mask"></i>
-				<label class="custom-control-label" for="customCheck1"><strong>
+				<label class="custom-control-label" for="maskPresence"><strong>
 					 Were face masks present?</strong></label>
+			</div>
+			<div class="form-check">
+				<input type="checkbox" class="custom-control-input" id="socialDistance">
+				<i class="fas fa-head-side-mask"></i>
+				<label class="custom-control-label" for="socialDistance"><strong>
+					 Was there sufficient social distancing?</strong></label>
 			</div>
 			<button type = "submit" class="btn btn-primary btn-block">Submit</button>
 		</form>
-		<div class = "card-block" id="formatted-address">
+		<div class = "card-block" id="formatted-address"> </div>
 		<div class="card-block" id="geometry">
-		</div>
+	</div>
 </div>
 
 	<script>
