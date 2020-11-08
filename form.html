@@ -32,7 +32,7 @@
 </nav>
 
 <div class="container">
-	<form id="user-report" method="POST">
+	<form id="user-report" action="/form.js">
 		<div class="form">
 			<div class="form-group">
 				<label for="location">Location </label>
@@ -114,37 +114,14 @@
 				//
 				// document.getElementById('formatted-address').innerHTML = formattedAddressOutput;
 				// document.getElementById('geometry').innerHTML = geometryOutput;
-				var masksI = document.getElementbyId("maskPresence").value;
-				var personDI = document.getElementbyId("populationSelection").value;
-				var socialDI = document.getElementById("socialDistance").value;
-				if(masksI == "true") {
-					var masks = 1;
-				}
-				else {
-					var masks = 0;
-				}
-				if(personDI == "10+") {
-					var personD = 10;
-				}
-				else {
-					var personD = parseInt(personDI);
-				}
-				if(socialDI == "true") {
-					var socialD = 1;
-				}
-				else {
-					var socialD = 0;
-				}
-				
-				const data = {masks, socialD, personD, lat, lng};
+
+				const data = {formattedAddress, lat, lng};
 				const options = {
 					method: POST,
-					headers: {
-                    'Content-Type': 'application/json'
-                    },
+
 					body: JSON.stringify(data)
 				};
-				fetch('/', options);
+				fetch('/api', options);
 
 
 			})
