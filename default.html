@@ -6,7 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<title>Covid Tracker</title>
+	<title>Mask-Off</title>
+	<style>
+		#myVideo {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			z-index: 5;
+		}
+	</style>
 </head>
 <body>
 
@@ -29,31 +39,9 @@
     </ul>
   </div>
 </nav>
-	<script>
-		//Call to geocode
-		geocode();
-	
-	
-		function geocode(){
-			var location = '22 Main st Boston MA';
-			axios.get('https://maps.googleapis.com/maps/api/geocode/json',{
-				params:{
-					address: location,
-					key: 'AIzaSyBLpVjX_hmr5WXZjXooFP6bh21eUzrq8zw'
-				}
-			})
-			.then((response) => {
-				console.log(respone);
-			})
-			.catch((error)=> {
-				console.log(error);
-			});
-		}
-	</script>
-	
-	
-	
-	
+	<video autoplay muted loop id="myVideo">
+	<source src="covidvideo.mp4" type="video/mp4">
+	</video>
 
 </body>
 </html>
